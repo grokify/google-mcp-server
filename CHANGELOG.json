@@ -1,0 +1,36 @@
+{
+  "irVersion": "1.0",
+  "project": "google-mcp-server",
+  "repository": "https://github.com/grokify/google-mcp-server",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["grokify", "johncwang@gmail.com"],
+  "bots": ["dependabot[bot]"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-02-09",
+      "highlights": [
+        { "description": "Initial release: Read-only MCP server for Google Slides presentations" }
+      ],
+      "added": [
+        { "description": "`get_presentation` tool: retrieve presentation metadata (title, slide count, locale, revision)", "commit": "638848d" },
+        { "description": "`list_slides` tool: enumerate slides with titles and element counts", "commit": "638848d" },
+        { "description": "`get_slide` tool: get content and elements for a specific slide by index or object ID", "commit": "638848d" },
+        { "description": "`get_slide_notes` tool: get speaker notes for a specific slide", "commit": "638848d" },
+        { "description": "`get_presentation_content` tool: aggregate all slides' text and images in one call", "commit": "638848d" },
+        { "description": "Google service account authentication via `-credentials` flag", "commit": "638848d" },
+        { "description": "goauth CredentialsSet authentication via `-goauth-credentials-file` and `-goauth-credentials-account` flags", "commit": "638848d" }
+      ],
+      "documentation": [
+        { "description": "README with installation, authentication setup, and Claude Desktop configuration", "commit": "e943df9" }
+      ],
+      "infrastructure": [
+        { "description": "GitHub Actions CI workflow for build and test", "commit": "1bc6773" },
+        { "description": "Dependabot configuration for Go modules and Actions", "commit": "1bc6773" },
+        { "description": "golangci-lint configuration", "commit": "1bc6773" },
+        { "description": "CodeQL security scanning", "commit": "1bc6773" }
+      ]
+    }
+  ]
+}
