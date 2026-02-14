@@ -16,7 +16,7 @@ import (
 
 const (
 	serverName    = "google-mcp-server"
-	serverVersion = "v0.1.0"
+	serverVersion = "v0.1.1"
 )
 
 func main() {
