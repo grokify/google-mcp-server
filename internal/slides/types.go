@@ -3,7 +3,7 @@ package slides
 
 // GetPresentationInput is the input for the get_presentation tool.
 type GetPresentationInput struct {
-	PresentationID string `json:"presentation_id" jsonschema:"required,description=The ID of the Google Slides presentation"`
+	PresentationID string `json:"presentation_id" jsonschema:"required,description:The ID of the Google Slides presentation"`
 }
 
 // GetPresentationOutput is the output for the get_presentation tool.
@@ -16,7 +16,7 @@ type GetPresentationOutput struct {
 
 // ListSlidesInput is the input for the list_slides tool.
 type ListSlidesInput struct {
-	PresentationID string `json:"presentation_id" jsonschema:"required,description=The ID of the Google Slides presentation"`
+	PresentationID string `json:"presentation_id" jsonschema:"required,description:The ID of the Google Slides presentation"`
 }
 
 // SlideInfo represents basic information about a slide.
@@ -34,9 +34,9 @@ type ListSlidesOutput struct {
 
 // GetSlideInput is the input for the get_slide tool.
 type GetSlideInput struct {
-	PresentationID string `json:"presentation_id" jsonschema:"required,description=The ID of the Google Slides presentation"`
-	SlideIndex     *int   `json:"slide_index,omitempty" jsonschema:"description=The zero-based index of the slide (mutually exclusive with slide_object_id)"`
-	SlideObjectID  string `json:"slide_object_id,omitempty" jsonschema:"description=The object ID of the slide (mutually exclusive with slide_index)"`
+	PresentationID string `json:"presentation_id" jsonschema:"required,description:The ID of the Google Slides presentation"`
+	SlideIndex     *int   `json:"slide_index,omitempty" jsonschema:"description:The zero-based index of the slide (mutually exclusive with slide_object_id)"`
+	SlideObjectID  string `json:"slide_object_id,omitempty" jsonschema:"description:The object ID of the slide (mutually exclusive with slide_index)"`
 }
 
 // ElementSummary represents a summary of a page element.
@@ -64,9 +64,9 @@ type ImageInfo struct {
 
 // GetSlideNotesInput is the input for the get_slide_notes tool.
 type GetSlideNotesInput struct {
-	PresentationID string `json:"presentation_id" jsonschema:"required,description=The ID of the Google Slides presentation"`
-	SlideIndex     *int   `json:"slide_index,omitempty" jsonschema:"description=The zero-based index of the slide (mutually exclusive with slide_object_id)"`
-	SlideObjectID  string `json:"slide_object_id,omitempty" jsonschema:"description=The object ID of the slide (mutually exclusive with slide_index)"`
+	PresentationID string `json:"presentation_id" jsonschema:"required,description:The ID of the Google Slides presentation"`
+	SlideIndex     *int   `json:"slide_index,omitempty" jsonschema:"description:The zero-based index of the slide (mutually exclusive with slide_object_id)"`
+	SlideObjectID  string `json:"slide_object_id,omitempty" jsonschema:"description:The object ID of the slide (mutually exclusive with slide_index)"`
 }
 
 // GetSlideNotesOutput is the output for the get_slide_notes tool.
@@ -76,8 +76,8 @@ type GetSlideNotesOutput struct {
 
 // GetPresentationContentInput is the input for the get_presentation_content tool.
 type GetPresentationContentInput struct {
-	PresentationID string `json:"presentation_id" jsonschema:"required,description=The ID of the Google Slides presentation"`
-	IncludeNotes   bool   `json:"include_notes,omitempty" jsonschema:"description=Include speaker notes for each slide"`
+	PresentationID string `json:"presentation_id" jsonschema:"required,description:The ID of the Google Slides presentation"`
+	IncludeNotes   bool   `json:"include_notes,omitempty" jsonschema:"description:Include speaker notes for each slide"`
 }
 
 // SlideContent represents the content of a single slide.
