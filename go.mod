@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/grokify/goauth v0.23.29
 	github.com/grokify/gogoogle v0.8.0
-	github.com/modelcontextprotocol/go-sdk v1.3.1
+	github.com/modelcontextprotocol/go-sdk v1.4.0
 	google.golang.org/api v0.269.0
 )
 
